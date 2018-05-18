@@ -1,0 +1,25 @@
+---
+name: tmp-linkat
+version: 1.0
+summary: xxx
+description: xxx
+confinement: strict
+grade: stable
+apps:
+  tmp-linkat:
+    command: tmp-linkat
+    plugs:
+    - home
+    - x11
+    - opengl
+    - network
+    - network-bind
+    - unity7
+    - pulseaudio
+    - cups-control
+    - desktop
+    - desktop-legacy
+parts:
+  tmp-linkat:
+    plugin: cmake
+    source: .
